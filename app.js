@@ -1,10 +1,10 @@
 let timerInterval;
-let elapsedTime = 0; // in milliseconds
+let elapsedTime = 0; 
 
 function start() {
     if (!timerInterval) {
         timerInterval = setInterval(() => {
-            elapsedTime += 10; // increment by 10 milliseconds
+            elapsedTime += 10; 
             updateDisplay();
         }, 10);
     }
@@ -12,13 +12,13 @@ function start() {
 
 function stop() {
     clearInterval(timerInterval);
-    timerInterval = null; // reset the interval
+    timerInterval = null; 
 }
 
 function reset() {
     clearInterval(timerInterval);
-    timerInterval = null; // reset the interval
-    elapsedTime = 0; // reset the elapsed time
+    timerInterval = null; 
+    elapsedTime = 0;
     updateDisplay();
 }
 
