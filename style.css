@@ -1,0 +1,128 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --display-color: #555;
+    --start-btn-color: #4CAF50;
+    --stop-btn-color: #f44336;
+    --reset-btn-color: #2196F3;
+}
+
+.dark-mode {
+    --bg-color: #222;
+    --text-color: #f0f0f0;
+    --display-color: #f0f0f0;
+    --start-btn-color: #ff6b6b;
+    --stop-btn-color: #ff3333;
+    --reset-btn-color: #ff9933;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+.container {
+    background-color: var(--bg-color);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(248, 248, 248, 0.1), 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px; /* Fixed width for the container */
+    color: var(--text-color);
+}
+
+.stopwatch-image {
+    margin-bottom: 20px;
+}
+
+.stopwatch-image img {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.display {
+    font-size: 72px;
+    font-weight: bold;
+    color: var(--display-color);
+    margin-bottom: 40px;
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.controls button {
+    font-size: 16px;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#startBtn {
+    background-color: var(--start-btn-color);
+}
+
+#startBtn:hover {
+    background-color: #45a049;
+}
+
+#stopBtn {
+    background-color: var(--stop-btn-color);
+}
+
+#stopBtn:hover {
+    background-color: #da190b;
+}
+
+#resetBtn {
+    background-color: var(--reset-btn-color);
+}
+
+#resetBtn:hover {
+    background-color: #0b7dda;
+}
+
+.theme-switch {
+    margin-top: 20px;
+}
+
+#themeBtn {
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#themeBtn:hover {
+    background-color: #555;
+}
+
+.footer {
+    margin-top: 20px; 
+    text-align: center; 
+    font-size: 14px; 
+    color: var(--text-color); 
+    padding: 10px; 
+}

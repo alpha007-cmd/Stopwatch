@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch-image">
+            <img src="https://img.icons8.com/ios/452/stopwatch.png" alt="Stopwatch" />
+        </div>
+        <h1>STOPWATCH</h1>
+        <div class="display">
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="startBtn" onclick="start()">Start</button>
+            <button id="stopBtn" onclick="stop()">Stop</button>
+            <button id="resetBtn" onclick="reset()">Reset</button>
+        </div>
+        <div class="theme-switch">
+            <button id="themeBtn" onclick="toggleTheme()">Dark Mode</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p><a href="https://github.com/alpha007-cmd" target="_blank">Developed by Alpha</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
