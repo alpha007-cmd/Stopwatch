@@ -20,10 +20,10 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    height: 100vh; /* Full viewport height */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
     margin: 0;
 }
 
@@ -33,7 +33,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(248, 248, 248, 0.1), 0 10px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 400px; /* Fixed width for the container */
+    width: 400px; 
     color: var(--text-color);
 }
 
